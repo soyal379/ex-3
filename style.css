@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+main{
+    /* border: 2px solid; */
+    width: 85vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .box{
+    width: 22%;
+    /* border: 1px solid; */
+    /* margin: auto; */
+    box-shadow: 1px 4px 9px 0px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.box h2{
+    /* border: 1px solid; */
+    font-size: 30px;
+    margin: 15px;
+    margin-bottom: 1px ;
+}
+
+.box p{
+    /* border: 1px solid; */
+    width: 70%;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    margin: 8px;
+    color: gray;
+}
+
+.box b{
+    /* border: 1px solid; */
+    font-size: 25px;
+    margin: 8px;
+}
+
+.box .stars{
+    display: flex;
+}
+
+.box button{
+    /* border: 1px solid; */
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.box .first-img img{
+    width: 278px;
+}
+
+.box .second-img img{
+    width: 205px;
+}
+
+.box .third-img img{
+    width: 206px;
+}
+
+.box .fourth-img img{
+    width: 140px;
+}
+
+
+
+@media only screen and (max-width:455px) {
+    main{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    main .box{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:455px) and (max-width:900px) {
+    main{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    main .box{
+        width: 45%;
+    }
+}
